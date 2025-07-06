@@ -6,6 +6,13 @@ using UnityEngine.SceneManagement;
 public class TilemapDoor : MonoBehaviour
 {
     public string sceneToLoad; 
+    public SceneFader fader;
+
+    private void Start()
+    {
+        fader = FindObjectOfType<SceneFader>();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -19,8 +26,17 @@ public class TilemapDoor : MonoBehaviour
                 Destroy(musica);
             }
 
+            if (fader != null)
+            {
+                fader.FadeToScene(sceneToLoad); // Aguarda o fade dentro do SceneFader
+            }
+            else
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad);
+            }
+
             // Troca de cena
-            SceneManager.LoadScene(sceneToLoad);
+            //SceneManager.LoadScene(sceneToLoad);
         }
     }
 }
