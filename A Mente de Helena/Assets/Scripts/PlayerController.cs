@@ -20,25 +20,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*_playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        /*if (_playerDirection.sqrMagnitude > 0)
-        {
-            _playerAnimator.SetInteger("Movimento", 1);
-        }
-        else
-        {
-            _playerAnimator.SetInteger("Movimento", 0);
-        }*/
-        /*if (Input.GetAxisRaw("Vertical") < 0)
-        {
-            _playerDirection = Vector2.down; // (0, -1)
-            _playerAnimator.SetInteger("Movimento", 1);
-        }
-        else
-        {
-            _playerDirection = Vector2.zero;
-            _playerAnimator.SetInteger("Movimento", 0);
-        }*/
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
@@ -68,9 +49,10 @@ public class PlayerController : MonoBehaviour
             _playerAnimator.SetInteger("Movimento", 0); // Idle
         }
     }
-    
+
     void FixedUpdate()
     {
         _playerRigidBody.MovePosition(_playerRigidBody.position + _playerDirection * _playerVelocity * Time.fixedDeltaTime);
     }
+
 }
