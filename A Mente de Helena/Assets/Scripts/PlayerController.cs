@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float _playerVelocity;
     private Vector2 _playerDirection;
     private Animator _playerAnimator;
+    private static PlayerController instance;
 
     // Start is called before the first frame update
     void Start()
@@ -55,4 +56,14 @@ public class PlayerController : MonoBehaviour
         _playerRigidBody.MovePosition(_playerRigidBody.position + _playerDirection * _playerVelocity * Time.fixedDeltaTime);
     }
 
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 }

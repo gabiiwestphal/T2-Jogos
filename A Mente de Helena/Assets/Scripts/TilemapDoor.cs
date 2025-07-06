@@ -10,33 +10,22 @@ public class TilemapDoor : MonoBehaviour
 
     private void Start()
     {
-        fader = FindObjectOfType<SceneFader>();
+        GameObject gameSession = GameObject.Find("GameSession");
+        if (gameSession != null)
+        fader = gameSession.GetComponentInChildren<SceneFader>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player")) return;
+
+        if (fader != null)
         {
-            Debug.Log("Entrou na porta!");
-
-            // Para e destrói a música antes de trocar de cena
-            GameObject musica = GameObject.Find("AmbientMusic");
-            if (musica != null)
-            {
-                Destroy(musica);
-            }
-
-            if (fader != null)
-            {
-                fader.FadeToScene(sceneToLoad); // Aguarda o fade dentro do SceneFader
-            }
-            else
-            {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad);
-            }
-
-            // Troca de cena
-            //SceneManager.LoadScene(sceneToLoad);
+            fader.FadeToScene(sceneToLoad);
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }

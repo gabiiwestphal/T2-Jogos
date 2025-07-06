@@ -50,4 +50,10 @@ public class SceneFader : MonoBehaviour
             yield return null;
         }
     }
+
+    public void ForceFadeFromBlack()
+    {
+    StartCoroutine(FadeFromBlack());
+    }
+
 }
