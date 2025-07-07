@@ -12,12 +12,16 @@ public class TilemapDoor : MonoBehaviour
     {
         GameObject gameSession = GameObject.Find("GameSession");
         if (gameSession != null)
-        fader = gameSession.GetComponentInChildren<SceneFader>();
+            fader = gameSession.GetComponentInChildren<SceneFader>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
+
+        GameManager.instancia.AdicionarPontos(100);
+
+        PlayerPrefs.SetString("Checkpoint", sceneToLoad);
 
         if (fader != null)
         {
