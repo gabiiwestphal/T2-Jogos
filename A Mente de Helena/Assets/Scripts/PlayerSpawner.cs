@@ -7,12 +7,17 @@ public class PlayerSpawner : MonoBehaviour
 {
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Sala2")
-        {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            GameObject spawn = GameObject.Find("PlayerSpawnSala2");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        
+        if (player == null) return;
 
-            if (player != null && spawn != null)
+        string lastScene = PlayerPrefs.GetString("Checkpoint", "");
+
+        // Só move o player se a cena atual for a mesma do checkpoint
+        if (SceneManager.GetActiveScene().name == lastScene)
+        {
+            GameObject spawn = GameObject.Find("PlayerSpawnSala2");
+            if (spawn != null)
             {
                 player.transform.position = spawn.transform.position;
             }

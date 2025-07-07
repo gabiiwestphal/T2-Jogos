@@ -29,7 +29,8 @@ public class MenuManager : MonoBehaviour
         if (PlayerPrefs.HasKey("Checkpoint"))
         {
             string cenaCheckpoint = PlayerPrefs.GetString("Checkpoint");
-            SceneManager.LoadScene(cenaCheckpoint);
+            //SceneManager.LoadScene(cenaCheckpoint);
+            SceneManager.LoadScene("LoaderScene");
         }
         else
         {
