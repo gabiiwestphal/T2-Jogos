@@ -23,4 +23,8 @@ public class AmbientMusicController : MonoBehaviour
         if (audioSrc.isPlaying)
             audioSrc.Stop();
     }
+    private void Start()
+    {
+        PlayMusic(); // <-- toca ao iniciar
+    }
 }
