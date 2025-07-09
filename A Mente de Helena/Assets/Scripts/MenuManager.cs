@@ -21,14 +21,16 @@ public class MenuManager : MonoBehaviour
 
         PlayerPrefs.SetString("Apelido", apelido);
         PlayerPrefs.DeleteKey("Checkpoint");
-        SceneManager.LoadScene("SampleScene");
+        PlayerPrefs.SetInt("LoadFromCheckpoint", 0);
+        SceneManager.LoadScene("LoaderScene");
     }
 
     public void CarregarJogo()
     {
         if (PlayerPrefs.HasKey("Checkpoint"))
         {
-            string cenaCheckpoint = PlayerPrefs.GetString("Checkpoint");
+            PlayerPrefs.SetInt("LoadFromCheckpoint", 1);
+            //string cenaCheckpoint = PlayerPrefs.GetString("Checkpoint");
             //SceneManager.LoadScene(cenaCheckpoint);
             SceneManager.LoadScene("LoaderScene");
         }

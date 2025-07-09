@@ -22,6 +22,20 @@ public class LuzSeguidora : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
+        // 🔍 Novo: procurar Player automaticamente se alvo não foi definido no Inspector
+        if (alvo == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                alvo = player.transform;
+            }
+            else
+            {
+                Debug.LogWarning("LuzSeguidora: Player com tag 'Player' não encontrado!");
+            }
+        }
+
         // Inicializa variáveis aleatórias únicas por instância
         rng = new System.Random(GetInstanceID());
         velocidade = Random.Range(velocidadeMin, velocidadeMax);
