@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ResetarJogador : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class ResetarJogador : MonoBehaviour
     private PlayerController playerCtrl;
     private Rigidbody2D playerRb;
     private bool morto = false;
+    private int tentativasRestantes = 1; // 2 tentativas antes de morrer de vez
 
     private void Start()
     {
@@ -30,19 +32,29 @@ public class ResetarJogador : MonoBehaviour
             luz.SaveStartPosition();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
+     private void OnTriggerEnter2D(Collider2D other) {
         if (morto || !other.CompareTag("Player")) return;
         morto = true;
 
         musica?.StopMusic();
 
+        tentativasRestantes--;
+        if (tentativasRestantes < 0)
+        {
+            string apelido = PlayerPrefs.GetString("Apelido", "Jogador");
+            int pontuacao = PlayerPrefs.GetInt("Pontuacao", 0); // Ajuste conforme seu sistema de pontuação
+            RankingUtils.SalvarRanking(apelido, pontuacao);
+
+            SceneManager.LoadScene("MenuPrincipal");
+            return;
+        }
         // Bloqueia o controle temporariamente
         playerCtrl.enabled = false;
         playerRb.velocity = Vector2.zero;
 
         StartCoroutine(Resetar());
     }
+
 
     private IEnumerator Resetar()
     {

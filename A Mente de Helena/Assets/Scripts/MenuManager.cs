@@ -8,17 +8,29 @@ public class MenuManager : MonoBehaviour
     public TMP_InputField apelidoInput;
     public GameObject rankingPanel;
     public GameObject sobrePanel;
-    public GameObject menuUI; 
+
+    public GameObject menuUI;
+
+    public TMP_Text mensagemText;
+
+    public TMP_Text rankingText;
+
+    void Start()
+    {
+        apelidoInput.text = "";
+        mensagemText.text = "";
+    }
 
     public void NovoJogo()
     {
         string apelido = apelidoInput.text;
         if (string.IsNullOrEmpty(apelido))
         {
-            Debug.Log("Insira um apelido.");
+            mensagemText.text = "Insira um apelido para jogar!";
             return;
         }
 
+        mensagemText.text = ""; // Limpa mensagem
         PlayerPrefs.SetString("Apelido", apelido);
         PlayerPrefs.DeleteKey("Checkpoint");
         PlayerPrefs.SetInt("LoadFromCheckpoint", 0);
@@ -27,16 +39,23 @@ public class MenuManager : MonoBehaviour
 
     public void CarregarJogo()
     {
+        string apelido = apelidoInput.text;
+        if (string.IsNullOrEmpty(apelido))
+        {
+            mensagemText.text = "Insira um apelido para carregar!";
+            return;
+        }
+
         if (PlayerPrefs.HasKey("Checkpoint"))
         {
+            mensagemText.text = "";
+            PlayerPrefs.SetString("Apelido", apelido);
             PlayerPrefs.SetInt("LoadFromCheckpoint", 1);
-            //string cenaCheckpoint = PlayerPrefs.GetString("Checkpoint");
-            //SceneManager.LoadScene(cenaCheckpoint);
             SceneManager.LoadScene("LoaderScene");
         }
         else
         {
-            Debug.Log("Nenhum checkpoint salvo.");
+            mensagemText.text = "Nenhum checkpoint salvo.";
         }
     }
 
@@ -52,5 +71,42 @@ public class MenuManager : MonoBehaviour
         menuUI.SetActive(true);
     }
 
-    public void AbrirRanking() => rankingPanel.SetActive(true);
+    public void AbrirRanking()
+    {
+        rankingPanel.SetActive(true);
+        menuUI.SetActive(false);
+        MostrarRanking();
+        rankingPanel.SetActive(true);
+    }
+
+    public void MostrarRanking()
+{
+    string path = Application.persistentDataPath + "/ranking.json";
+    if (System.IO.File.Exists(path))
+    {
+        string json = System.IO.File.ReadAllText(path);
+        RankingList ranking = JsonUtility.FromJson<RankingList>(json);
+        if (ranking != null && ranking.entries.Count > 0)
+        {
+            string texto = "<b>Nome - Pontuação</b>\n";
+            int pos = 1;
+            foreach (var entry in ranking.entries)
+            {
+                texto += $"{entry.apelido,-2} - {entry.pontuacao} pontos\n";
+                pos++;
+            }
+            rankingText.text = texto;
+        }
+        else
+        {
+            rankingText.text = "Nenhum ranking salvo ainda.";
+        }
+    }
+    else
+    {
+        rankingText.text = "Nenhum ranking salvo ainda.";
+    }
+}
+
+    
 }
