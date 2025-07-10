@@ -22,8 +22,10 @@ public class GameManager : MonoBehaviour
     public void AdicionarPontos(int valor)
     {
         pontuacaoAtual += valor;
+        PlayerPrefs.SetInt("Pontuacao", pontuacaoAtual); // ← Salva no PlayerPrefs
         Debug.Log("Pontuação atual: " + pontuacaoAtual);
     }
+
 
     public int ObterPontuacao()
     {

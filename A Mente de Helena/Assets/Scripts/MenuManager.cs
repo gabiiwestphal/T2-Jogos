@@ -79,34 +79,48 @@ public class MenuManager : MonoBehaviour
         rankingPanel.SetActive(true);
     }
 
-    public void MostrarRanking()
-{
-    string path = Application.persistentDataPath + "/ranking.json";
-    if (System.IO.File.Exists(path))
+   public void MostrarRanking()
     {
-        string json = System.IO.File.ReadAllText(path);
-        RankingList ranking = JsonUtility.FromJson<RankingList>(json);
-        if (ranking != null && ranking.entries.Count > 0)
+        // Salva a última pontuação antes de mostrar, se tiver dados
+        string apelido = PlayerPrefs.GetString("Apelido", "");
+        int pontuacao = PlayerPrefs.GetInt("Pontuacao", -1);
+
+        if (!string.IsNullOrEmpty(apelido) && pontuacao >= 0)
         {
-            string texto = "<b>Nome - Pontuação</b>\n";
-            int pos = 1;
-            foreach (var entry in ranking.entries)
+            RankingUtils.SalvarRanking(apelido, pontuacao);
+
+            // Zera para evitar duplicata em próxima abertura do ranking
+            PlayerPrefs.DeleteKey("Pontuacao");
+        }
+
+        // Abaixo segue a lógica atual de exibição
+        string path = Application.persistentDataPath + "/ranking.json";
+        if (System.IO.File.Exists(path))
+        {
+            string json = System.IO.File.ReadAllText(path);
+            RankingList ranking = JsonUtility.FromJson<RankingList>(json);
+            if (ranking != null && ranking.entries.Count > 0)
             {
-                texto += $"{entry.apelido,-2} - {entry.pontuacao} pontos\n";
-                pos++;
+                string texto = "<b>Nome - Pontuação</b>\n";
+                int pos = 1;
+                foreach (var entry in ranking.entries)
+                {
+                    texto += $"{entry.apelido,-2} - {entry.pontuacao} pontos\n";
+                    pos++;
+                }
+                rankingText.text = texto;
             }
-            rankingText.text = texto;
+            else
+            {
+                rankingText.text = "Nenhum ranking salvo ainda.";
+            }
         }
         else
         {
             rankingText.text = "Nenhum ranking salvo ainda.";
         }
     }
-    else
-    {
-        rankingText.text = "Nenhum ranking salvo ainda.";
-    }
-}
+
 
     
 }

@@ -3,7 +3,7 @@ guid: ecf210ea7f7270e4ba4ab18bd9b6dbf0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -25,7 +25,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -65,19 +65,17 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -90,7 +88,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -103,7 +100,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -116,12 +112,809 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b493256253e4a448b32999022bf16e
+      internalID: 1559575006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 135
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64401254cba9734ba3f86f0cd3edca7
+      internalID: 1924714124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 135
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d09deb05a8f3146b6ab7ce1b8668f5
+      internalID: 788007768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 135
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705ef75e6f1869747a7e1b139641f367
+      internalID: 63028991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 135
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8e89c92056c21449d37b351e43b021
+      internalID: -575017759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 135
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f4e34a08755284cabd225456331a24
+      internalID: 1818726614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_6
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 135
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6210aa94d05e8c45b6fe60063a32c9f
+      internalID: -439332935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06e6d72c00f68145b1e0e07b0e1b28c
+      internalID: -436250655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 108
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007677dc3fd9b63469c963a7fa758267
+      internalID: 488587618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 108
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d8b1ad728c9bb4990dcb2b28598e18
+      internalID: 1344175318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 108
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad4f1b641a670e40b722c48d2c0d2d2
+      internalID: -1706803972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_11
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 108
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e642a0694441a498c8234d483fb7dd
+      internalID: -1062110656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_12
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 108
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4682f48ca3536e459c9890d111e117d
+      internalID: -21107077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_13
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 108
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7423179f32eeb674c8da2268f2e1452e
+      internalID: 323885419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448073953f7a057439151b953336210b
+      internalID: -1070637285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_15
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 81
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5091a758851f8104d89aac8f806aad50
+      internalID: 1153548064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 81
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a4f74205a9b5849ad45f8b26d1b35d
+      internalID: -1583611387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_17
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 81
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c8c1ff413f84d43b447bb4e5187e77
+      internalID: 1557044343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 81
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a300f3c5fffd69d4e8bead23318de9c0
+      internalID: 510537704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_19
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 81
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4660e30e6106a314899b842e2aa1ce32
+      internalID: -2129064904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_20
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 81
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62094d1052651314387616afabe43e5e
+      internalID: -1202959258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621f4018a0db7a44fb594366f5d30806
+      internalID: 253804016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_22
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 54
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7664811c4c0fee4d815c9964aad52bd
+      internalID: -124300531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_23
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 54
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7da1c413a9164e47a0a2b749a7a2bd9
+      internalID: -1423631262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_24
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 54
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93725775b2ed96847a3e0941b0bb3e8d
+      internalID: 821914774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_25
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 54
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bae70722296418438fcc2ead4a6252b
+      internalID: -1690229778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_26
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 54
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efc1c747a5e0764e80fd090c844a4a2
+      internalID: 292020088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_27
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 54
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c1aa26bf0029b46a7bfd166d6f32c6
+      internalID: -1004320422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a88390eb45a6a1459412afb42d66c2e
+      internalID: 157452691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_29
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 27
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd899a5c8ec53c04c993966cdc5c5fc2
+      internalID: 468856934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_30
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 27
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041b381131b15f142944ed20e1756bcf
+      internalID: 1116614527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_31
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 27
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4c8b82d81071447abd73b7bc4bcabc
+      internalID: 1602910666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_32
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 27
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275e665df256e0b478c89bf69d8c435d
+      internalID: -1245128521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_33
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 27
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42383a0f73c77bf47aa5b256ec722384
+      internalID: -910024722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_34
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 27
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09b86d35d4e52f47a1128da3c702ec8
+      internalID: 1005229855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01af093aae261324fa0e5dab61056be1
+      internalID: -444117713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_36
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7a2c8d7751bec45a63887ef3da7392
+      internalID: 773804544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lantern 4 Small - Silver and Yellow_37
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa51530c66fb7943b335b45b19b0834
+      internalID: 112526023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,8 +925,46 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
-  mipmapLimitGroupName: 
+    nameFileIdTable:
+      Lantern 4 Small - Silver and Yellow_3: 63028991
+      Lantern 4 Small - Silver and Yellow_15: 1153548064
+      Lantern 4 Small - Silver and Yellow_4: -575017759
+      Lantern 4 Small - Silver and Yellow_36: 773804544
+      Lantern 4 Small - Silver and Yellow_28: 157452691
+      Lantern 4 Small - Silver and Yellow_0: 1559575006
+      Lantern 4 Small - Silver and Yellow_18: 510537704
+      Lantern 4 Small - Silver and Yellow_20: -1202959258
+      Lantern 4 Small - Silver and Yellow_19: -2129064904
+      Lantern 4 Small - Silver and Yellow_16: -1583611387
+      Lantern 4 Small - Silver and Yellow_8: 488587618
+      Lantern 4 Small - Silver and Yellow_31: 1602910666
+      Lantern 4 Small - Silver and Yellow_1: 1924714124
+      Lantern 4 Small - Silver and Yellow_22: -124300531
+      Lantern 4 Small - Silver and Yellow_12: -21107077
+      Lantern 4 Small - Silver and Yellow_6: -439332935
+      Lantern 4 Small - Silver and Yellow_7: -436250655
+      Lantern 4 Small - Silver and Yellow_10: -1706803972
+      Lantern 4 Small - Silver and Yellow_34: 1005229855
+      Lantern 4 Small - Silver and Yellow_13: 323885419
+      Lantern 4 Small - Silver and Yellow_14: -1070637285
+      Lantern 4 Small - Silver and Yellow_11: -1062110656
+      Lantern 4 Small - Silver and Yellow_23: -1423631262
+      Lantern 4 Small - Silver and Yellow_32: -1245128521
+      Lantern 4 Small - Silver and Yellow_17: 1557044343
+      Lantern 4 Small - Silver and Yellow_27: -1004320422
+      Lantern 4 Small - Silver and Yellow_30: 1116614527
+      Lantern 4 Small - Silver and Yellow_33: -910024722
+      Lantern 4 Small - Silver and Yellow_37: 112526023
+      Lantern 4 Small - Silver and Yellow_5: 1818726614
+      Lantern 4 Small - Silver and Yellow_29: 468856934
+      Lantern 4 Small - Silver and Yellow_2: 788007768
+      Lantern 4 Small - Silver and Yellow_24: 821914774
+      Lantern 4 Small - Silver and Yellow_25: -1690229778
+      Lantern 4 Small - Silver and Yellow_9: 1344175318
+      Lantern 4 Small - Silver and Yellow_21: 253804016
+      Lantern 4 Small - Silver and Yellow_26: 292020088
+      Lantern 4 Small - Silver and Yellow_35: -444117713
+  spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
